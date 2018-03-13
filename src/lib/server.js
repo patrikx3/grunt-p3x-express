@@ -1,14 +1,16 @@
 /*
- * grunt-express-server
+ * grunt-p3x-express
  * https://github.com/ericclemmons/grunt-express-server
  *
  * Copyright (c) 2013 Eric Clemmons
+ * Copyright (c) 2017 Patrik Laszlo <alabard@gmail.com>
  * Licensed under the MIT license.
  */
 
 'use strict';
 var spawn = require('child_process').spawn;
 var process = require('process');
+const _ = require('lodash');
 
 module.exports = function(grunt, target) {
   if (!process._servers) {
@@ -61,7 +63,6 @@ module.exports = function(grunt, target) {
         process.env.NODE_ENV = options.node_env;
       }
       if (options.env) {
-        const _ = require('lodash');
         process.env = _.merge(process.env, options.env)
       }
 
@@ -95,17 +96,28 @@ module.exports = function(grunt, target) {
 
       if (options.background) {
         var errtype = process.stderr;
+
+        let spawnOptions =  {
+          env: _.merge(process.env, {
+            FORCE_COLOR: true
+          }),
+          stdio: ['inherit'],
+          shell: true,
+          customFds: [0,1,2]
+        };
+
         if(options.logs && options.logs.err) {
           errtype = 'pipe';
-        }
-        server = process._servers[target] = spawn(
-          options.cmd,
-          options.opts.concat(options.args),
-          {
-            env:      process.env,
+
+          spawnOptions =  {
+            env: process.env,
             stdio: ['ignore', 'pipe', errtype]
           }
-        );
+        }
+
+        server = process._servers[target] = spawn(
+          options.cmd,
+          options.opts.concat(options.args), spawnOptions);
 
         if (options.delay) {
           setTimeout(finished, options.delay);

@@ -1,8 +1,9 @@
 /*
- * grunt-express-server
+ * grunt-p3x-express
  * https://github.com/ericclemmons/grunt-express-server
  *
  * Copyright (c) 2013 Eric Clemmons
+ * Copyright (c) 2017 Patrik Laszlo <alabard@gmail.com>
  * Licensed under the MIT license.
  */
 
