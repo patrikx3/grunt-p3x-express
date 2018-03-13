@@ -42,6 +42,12 @@ Simple grunt task for running an Express server that works great with LiveReload
 
 It works with the latest Node and some additional options.
 
+## Changelog
+
+### v1.1.199-248
+
+* the task uses colors now
+
 ## Getting Started
 
 This plugin requires Grunt `>=1.0.0`
