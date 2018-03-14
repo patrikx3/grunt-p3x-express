@@ -8,8 +8,9 @@
  */
 
 'use strict';
-var spawn = require('child_process').spawn;
-var process = require('process');
+const spawn = require('child_process').spawn;
+const process = require('process');
+const path = require('path');
 const _ = require('lodash');
 
 module.exports = function(grunt, target) {
@@ -17,14 +18,13 @@ module.exports = function(grunt, target) {
     process._servers = {};
   }
 
-  var backup  = null;
-  var done    = null;
-  var server  = process._servers[target]; // Store server between live reloads to close/restart express
+  let backup  = null;
+  let done    = null;
+  let server  = process._servers[target]; // Store server between live reloads to close/restart express
 
-  var finished = function() {
+  let finished = function() {
     if (done) {
       done();
-
       done = null;
     }
   };
@@ -75,7 +75,7 @@ module.exports = function(grunt, target) {
       // Set debug mode for node-inspector
       // Based on https://github.com/joyent/node/blob/master/src/node.cc#L2903
 
-      var debugFlag = 'debug';
+      let debugFlag = 'debug';
       if (parseInt(process.versions.node.split('.')[0]) > 7) {
           debugFlag = 'inspect';
       }
@@ -95,14 +95,14 @@ module.exports = function(grunt, target) {
       }
 
       if (options.background) {
-        var errtype = process.stderr;
+        let errtype = process.stderr;
 
         let spawnOptions =  {
           env: _.merge(process.env, {
             FORCE_COLOR: true
           }),
           stdio: ['inherit'],
-          shell: true,
+//          shell: true,
           customFds: [0,1,2]
         };
 
@@ -114,10 +114,14 @@ module.exports = function(grunt, target) {
             stdio: ['ignore', 'pipe', errtype]
           }
         }
+        const args = options.opts.concat(options.args);
 
-        server = process._servers[target] = spawn(
-          options.cmd,
-          options.opts.concat(options.args), spawnOptions);
+//        console.log(process.argv0)
+//        console.log(args)
+//        console.log(spawnOptions)
+//        process.exit()
+      
+          server = process._servers[target] = spawn(process.argv0, args, spawnOptions);
 
         if (options.delay) {
           setTimeout(finished, options.delay);
@@ -125,16 +129,16 @@ module.exports = function(grunt, target) {
 
         if (options.output) {
           server.stdout.on('data', function(data) {
-            var message = "" + data;
-            var regex = new RegExp(options.output, "gi");
+            let message = "" + data;
+            let regex = new RegExp(options.output, "gi");
             if (message.match(regex)) {
               finished();
             }
           });
         }
-        var out = process.stdout;
+        let out = process.stdout;
         if(options.logs) {
-          var fs = require('fs'), path = require('path');
+          const fs = require('fs');
           if(options.logs.out) {
             out = fs.createWriteStream(path.resolve(options.logs.out), {flags: 'a'});
           }

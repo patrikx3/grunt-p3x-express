@@ -6,23 +6,20 @@
  * Copyright (c) 2017 Patrik Laszlo <alabard@gmail.com>
  * Licensed under the MIT license.
  */
-
-'use strict';
-
-var path = require('path');
+const path = require('path');
 
 module.exports = function(grunt) {
 
-  var servers = {};
+  const servers = {};
 
   grunt.registerMultiTask('express', 'Start an express web server', function() {
     if (!servers[this.target]) {
       servers[this.target] = require('./lib/server')(grunt, this.target);
     }
 
-    var server  = servers[this.target];
-    var action  = this.args.shift() || 'start';
-    var options = this.options({
+    const server  = servers[this.target];
+    const action  = this.args.shift() || 'start';
+    const options = this.options({
       cmd:              process.argv[0],
       opts:             [ ],
       args:             [ ],
@@ -39,17 +36,17 @@ module.exports = function(grunt) {
       hardStop:         false
     });
 
-    options.script = path.resolve(options.script);
-
-    options.args.unshift(options.script);
-
     if (options.harmony) {
       options.args.unshift('--harmony');
     }
 
+    options.script = path.resolve(options.script);
+
+    options.args.push(options.script);
+
+
     if (!grunt.file.exists(options.script)) {
       grunt.log.error('Could not find server script: ' + options.script);
-
       return false;
     }
 
