@@ -6,7 +6,7 @@
 
 
  
-# 🚧 Grunt Express Server updated with additional options v1.1.270-284  
+# 🚧 Grunt Express Server updated with additional options v1.1.274-286  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
@@ -168,7 +168,7 @@ Typically, this is:
 
 If your server doesn't log anything, the express task will never finish and **none** of the following tasks, after it, will be executed. For example - if you have a development task like this one:
 
-```javascript
+```js
 grunt.registerTask('rebuild', ['clean', 'browserify:scripts', 'stylus', 'copy:images']);
 grunt.registerTask('dev', ['rebuild', 'express', 'watch']);
 ```
@@ -177,7 +177,7 @@ If you run the dev task and your server doesn't log anything, **'watch' will nev
 
 This can easily be avoided, if you log something, when server is created like that:
 
-```javascript
+```js
 var server = http.createServer( app ).listen( PORT, function() {
     console.log('Express server listening on port ' + PORT);
 } );
@@ -253,7 +253,7 @@ https://github.com/ericclemmons/grunt-express-server
 
 ---
 
-[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.270-284 
+[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.274-286 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
