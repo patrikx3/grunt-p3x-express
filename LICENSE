@@ -1,7 +1,13 @@
-MIT License
 
-Copyright (c) 2013 Eric Clemmons
-Copyright (c) 2018 Patrik Laszlo / patrikx3 / https://patrikx3.com and contributors
+@license grunt-p3x-express v1.1.309-313
+  
+🚧 Grunt Express Server updated with additional options
+
+https://pages.corifeus.com/grunt-p3x-express
+
+Copyright (c) 2018 Patrik Laszlo / P3X / Corifeus and contributors.
+
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,4 +25,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.    
