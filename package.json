@@ -10,7 +10,7 @@
         "build": true
     },
     "description": "🚧 Grunt Express Server updated with additional options",
-    "version": "1.1.309-313",
+    "version": "1.1.312-315",
     "homepage": "https://pages.corifeus.com/grunt-p3x-express",
     "author": {
         "name": "Eric Clemmons",
@@ -32,19 +32,19 @@
     "license": "MIT",
     "main": "Gruntfile.js",
     "engines": {
-        "node": ">=8.9.0"
+        "node": ">=10.0.0"
     },
     "scripts": {
         "test": "./node_modules/.bin/grunt"
     },
     "devDependencies": {
-        "corifeus-builder": "^1.8.9-414",
+        "corifeus-builder": "^1.8.14-417",
         "express": "^4.16.3",
         "grunt": "^1.0.2",
         "grunt-cli": "^1.2.0",
         "grunt-contrib-clean": "^1.1.0",
         "grunt-contrib-jshint": "^1.1.0",
-        "grunt-contrib-nodeunit": "^1.0.0",
+        "grunt-contrib-nodeunit": "^2.0.0",
         "grunt-contrib-watch": "^1.1.0",
         "lodash": "^4.17.10"
     },
