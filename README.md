@@ -6,7 +6,7 @@
 
 
  
-# 🚧 Grunt Express Server updated with additional options v1.1.316-318  
+# 🚧 Grunt Express Server updated with additional options v1.1.317-319  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
@@ -14,6 +14,7 @@ I run my own server with dynamic IP address so it may happen that the server can
 
 All my domains (patrikx3.com and corifeus.com) could have errors since I am developing in my free time. However, it is usually stable.
 
+**Bugs are evident.™️**
 
 ### Node Version Requirement 
 ``` 
@@ -251,7 +252,7 @@ https://github.com/ericclemmons/grunt-express-server
 
 ---
 
-[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.316-318 
+[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.317-319 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
