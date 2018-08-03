@@ -3,10 +3,13 @@
 [![NPM](https://nodei.co/npm/grunt-p3x-express.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-p3x-express/)
 
   [![Build Status](https://travis-ci.org/patrikx3/grunt-p3x-express.svg?branch=master)](https://travis-ci.org/patrikx3/grunt-p3x-express) 
+[![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m780749701-41bcade28c1ea8154eda7cca.svg)](https://uptimerobot.patrikx3.com/)
+
+ 
 
 
  
-# 🚧 Grunt Express Server updated with additional options v1.1.327-329  
+# 🚧 Grunt Express Server updated with additional options v1.1.331-332  
 
 This is an open-source project. Star this repository, if you like it, or even donate! Thank you so much! :)
 
@@ -23,7 +26,7 @@ All my domains (patrikx3.com and corifeus.com) could have errors, since I am dev
    
 ### Built on Node 
 ``` 
-v10.6.0
+v10.8.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -252,7 +255,7 @@ https://github.com/ericclemmons/grunt-express-server
 
 ---
 
-[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.327-329 
+[**GRUNT-P3X-EXPRESS**](https://pages.corifeus.com/grunt-p3x-express) Build v1.1.331-332 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
