@@ -140,7 +140,7 @@ module.exports = function (grunt, target) {
                         }
                     });
                     server.stderr.on('data', function (data) {
-                       console.error(data.toString());
+                        console.error(data.toString());
                     });
                 }
                 let out = process.stdout;

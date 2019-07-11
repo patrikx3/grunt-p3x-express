@@ -8,47 +8,48 @@
  */
 const path = require('path');
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
-  const servers = {};
+    const servers = {};
 
-  grunt.registerMultiTask('express', 'Start an express web server', function() {
-    if (!servers[this.target]) {
-      servers[this.target] = require('./lib/server')(grunt, this.target);
-    }
+    grunt.registerMultiTask('express', 'Start an express web server', function () {
+        if (!servers[this.target]) {
+            servers[this.target] = require('./lib/server')(grunt, this.target);
+        }
 
-    const server  = servers[this.target];
-    const action  = this.args.shift() || 'start';
-    const options = this.options({
-      cmd:              process.argv[0],
-      opts:             [ ],
-      args:             [ ],
-      node_env:         undefined,
-      harmony:          false,
-      background:       true,
-      fallback:         function() { /* Prevent EADDRINUSE from breaking Grunt */ },
-      port:             process.env.PORT || 3000,
-      delay:            0,
-      output:           ".+",
-      debug:            false,
-      breakOnFirstLine: false,
-      logs:             undefined,
-      hardStop:         false
+        const server = servers[this.target];
+        const action = this.args.shift() || 'start';
+        const options = this.options({
+            cmd: process.argv[0],
+            opts: [],
+            args: [],
+            node_env: undefined,
+            harmony: false,
+            background: true,
+            fallback: function () { /* Prevent EADDRINUSE from breaking Grunt */
+            },
+            port: process.env.PORT || 3000,
+            delay: 0,
+            output: ".+",
+            debug: false,
+            breakOnFirstLine: false,
+            logs: undefined,
+            hardStop: false
+        });
+
+        if (options.harmony) {
+            options.args.unshift('--harmony');
+        }
+
+        options.script = path.resolve(options.script);
+
+        options.args.unshift(options.script);
+
+        if (!grunt.file.exists(options.script)) {
+            grunt.log.error('Could not find server script: ' + options.script);
+            return false;
+        }
+
+        server[action](options);
     });
-
-    if (options.harmony) {
-      options.args.unshift('--harmony');
-    }
-
-    options.script = path.resolve(options.script);
-
-    options.args.unshift(options.script);
-
-    if (!grunt.file.exists(options.script)) {
-      grunt.log.error('Could not find server script: ' + options.script);
-      return false;
-    }
-
-    server[action](options);
-  });
 };
