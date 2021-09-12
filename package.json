@@ -10,7 +10,7 @@
         "build": true
     },
     "description": "🚧 Grunt Express Server updated with additional options",
-    "version": "2021.10.106",
+    "version": "2021.10.110",
     "homepage": "https://corifeus.com/grunt-p3x-express",
     "author": {
         "name": "Eric Clemmons",
@@ -38,7 +38,7 @@
         "test": "./node_modules/.bin/grunt"
     },
     "devDependencies": {
-        "corifeus-builder": "^2021.10.105",
+        "corifeus-builder": "^2021.10.122",
         "express": "^4.17.1",
         "grunt": "^1.4.1",
         "grunt-cli": "^1.4.3",
