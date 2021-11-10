@@ -38,7 +38,7 @@
         "test": "./node_modules/.bin/grunt"
     },
     "devDependencies": {
-        "corifeus-builder": "^2021.10.176",
+        "corifeus-builder": "^2021.10.181",
         "express": "^4.17.1"
     },
     "keywords": [
