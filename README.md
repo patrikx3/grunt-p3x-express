@@ -1,6 +1,6 @@
 [//]: #@corifeus-header
 
-[![NPM](https://nodei.co/npm/grunt-p3x-express.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/grunt-p3x-express/)
+[![NPM](https://nodei.co/npm-dl/grunt-p3x-express.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/grunt-p3x-express/)
 
   
 
@@ -11,7 +11,7 @@
 
 
 
-# 🚧 Grunt Express Server updated with additional options v2023.10.124
+# 🚧 Grunt Express Server updated with additional options v2023.10.127
 
 
 
@@ -25,7 +25,7 @@
 ### Built on NodeJs version
 
 ```txt
-v20.5.0
+v20.5.1
 ```
 
 
@@ -262,7 +262,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2023.10.124
+[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2023.10.127
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
