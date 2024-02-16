@@ -4,13 +4,13 @@
         "publish": true,
         "type": "p3x",
         "code": "Next",
-        "nodejs": "v20.11.0",
+        "nodejs": "v20.11.1",
         "opencollective": false,
         "reponame": "grunt-p3x-express",
         "build": true
     },
     "description": "🚧 Grunt Express Server updated with additional options",
-    "version": "2024.4.104",
+    "version": "2024.4.107",
     "homepage": "https://corifeus.com/grunt-p3x-express",
     "author": {
         "name": "Eric Clemmons",
@@ -38,7 +38,7 @@
         "test": "./node_modules/.bin/grunt"
     },
     "devDependencies": {
-        "corifeus-builder": "^2024.4.103",
+        "corifeus-builder": "^2024.4.106",
         "express": "^4.18.2"
     },
     "keywords": [

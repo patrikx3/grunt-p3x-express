@@ -1,7 +1,5 @@
 [//]: #@corifeus-header
 
-[![NPM](https://nodei.co/npm-dl/grunt-p3x-express.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/grunt-p3x-express/)
-
   
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://paypal.me/patrikx3) [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Corifeus @ Facebook](https://img.shields.io/badge/Facebook-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)  [![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m780749701-41bcade28c1ea8154eda7cca.svg)](https://stats.uptimerobot.com/9ggnzcWrw)
@@ -10,7 +8,7 @@
 
 
 
-# 🚧 Grunt Express Server updated with additional options v2024.4.104
+# 🚧 Grunt Express Server updated with additional options v2024.4.107
 
 
 
@@ -24,7 +22,7 @@
 ### Built on NodeJs version
 
 ```txt
-v20.11.0
+v20.11.1
 ```
 
 
@@ -261,7 +259,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2024.4.104
+[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2024.4.107
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
