@@ -83,7 +83,7 @@ module.exports = function (grunt, target) {
             if (options.debug === true) {
                 options.opts.unshift('--' + debugFlag);
             } else if (!isNaN(parseInt(options.debug, 10))) {
-                options.opts.unshift('--' + debugFlag + '=' + options.debug);
+                options.opts.unshift('--' + debugFlag + '=0.0.0.0:' + options.debug);
             } else if (options.breakOnFirstLine === true) {
                 options.opts.unshift('--' + debugFlag + '-brk');
             } else if (!isNaN(parseInt(options.breakOnFirstLine, 10))) {
