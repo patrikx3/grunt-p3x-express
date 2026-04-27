@@ -6,7 +6,7 @@
 
 
 
-# 🚧 Grunt Express Server updated with additional options v2026.4.123
+# 🚧 Grunt Express Server updated with additional options v2026.4.125
 
 
   
@@ -306,7 +306,7 @@ All my domains, including [patrikx3.com](https://patrikx3.com), [corifeus.eu](ht
 **🚨 Important Changes:** Any breaking changes are prominently noted in the readme to keep you informed.
 
 
-[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2026.4.123
+[**GRUNT-P3X-EXPRESS**](https://corifeus.com/grunt-p3x-express) Build v2026.4.125
 
  [![NPM](https://img.shields.io/npm/v/grunt-p3x-express.svg)](https://www.npmjs.com/package/grunt-p3x-express)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
